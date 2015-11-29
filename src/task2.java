@@ -1,6 +1,10 @@
 
-public class task2 extends Thread {
+public class task2 implements Runnable{
 
+	public task2() {
+		new Thread(this).start();
+	}
+	
 	
 	@Override
 	public void run() {
@@ -16,3 +20,4 @@ public class task2 extends Thread {
 		
 	}
 }
+
